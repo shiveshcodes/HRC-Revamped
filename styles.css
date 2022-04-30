@@ -1,0 +1,306 @@
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.9);
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay .menu {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay .menu:hover, .menu:focus{
+  color: #47f4cf;
+  letter-spacing:  5px;
+}
+
+
+#closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  color: white;
+  cursor: pointer;
+}
+
+#openbtn{
+  position: fixed;
+  top: 20px;
+  right: 45px;
+  color: white;
+}
+
+
+/* body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: url("bkg.jpeg");
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+canvas {
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+.text-box {
+  font-size: 60px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 7px;
+  word-spacing: 12px;
+  text-transform: uppercase;
+  color:rgb(238, 238, 238);
+}
+
+.reveal{
+  transform: translateY(70px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-direction: row;
+}
+.button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px;
+  margin-left:20px;
+  margin-right:20px;
+  word-spacing: normal;
+  letter-spacing: 5px;
+  border: 1px solid white;
+  background: black;
+  cursor: pointer;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: url("bkg.jpeg");
+  background-attachment: fixed;
+}
+.text-box {
+  font-size: 25px;
+  /* letter-spacing: 7px;
+  word-spacing: 12px; */
+  text-align: right;
+  color:rgb(238, 238, 238);
+}
+section{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(1){
+  color: #e0ffff;
+  scale: 3;
+  transition: 10s all ease;
+  transition-delay: 3000ms;
+}
+
+section:nth-child(2){
+  color: #42455a;
+  background: transparent;
+} 
+section:nth-child(3){
+  color: #e0ffff;
+}
+section:nth-child(4){
+  color: #42455a;
+  background: transparent;
+}
+section .container{
+  margin: 100px;
+}
+section h1{
+  font-family: "Barlow";
+  font-weight: 500;
+  font-size: 3rem;
+  margin: 20px;
+}
+section h2{
+  font-size: 40px;
+  font-family: "Barlow";
+  color: white;
+  text-align: right;
+}
+
+section h2 span{
+  font-size: 40px;
+  font-family: "Barlow";
+  font-weight: 100;
+  text-align: right;
+}
+
+section .text-container{
+   display: flex;
+}
+
+section .text-container .text-box{
+  background: transparent;
+}
+section .text-container .text-box h3{
+  font-size: 40px;
+  text-align: right;
+  font-family: "Barlow";
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  position: sticky;
+  transform: translateY(-50px);
+  opacity: 1;
+}
+
+.reveal2{
+  position: relative;
+  transform: translateY(0px);
+  scale: 0.5;
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+
+.reveal2.active{
+  transition-delay: 1000ms;
+  scale: 0.3;
+  padding-bottom: -50px;
+  transform: translateY(-360px);
+  opacity: 1;
+}
+
+
+.div2 .container{
+  margin: 100px;
+}
+.div2 h1{
+  font-family: "Barlow";
+  font-weight: 500;
+  font-size: 3rem;
+  margin: 20px;
+}
+.div2 h2{
+  font-size: 40px;
+  font-family: "Barlow";
+  color: white;
+  text-align: left;
+}
+
+.div2 h2 span{
+  font-size: 40px;
+  font-family: "Barlow";
+  font-weight: 100;
+  text-align: left;
+}
+
+.div2 .text-container{
+   display: flex;
+}
+
+.div2 .text-container .text-box{
+  background: transparent;
+  text-align: left;
+}
+.div2 .text-container .text-box h3{
+  font-size: 40px;
+  text-align: left;
+  font-family: "Barlow";
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+
+
+.div3 .container{
+  margin: 100px;
+}
+.div3 h1{
+  font-family: "Barlow";
+  font-weight: 500;
+  font-size: 3rem;
+  margin: 20px;
+}
+.div3 h2{
+  font-size: 40px;
+  font-family: "Barlow";
+  color: white;
+  text-align: left;
+}
+
+.div3 h2 span{
+  font-size: 40px;
+  font-family: "Barlow";
+  font-weight: 100;
+  text-align: left;
+}
+
+.div3 .text-container{
+   display: flex;
+   flex-direction: column;
+}
+
+.div3 .text-container .text-box{
+  background: transparent;
+  text-align: left;
+}
+.div3 .text-container .text-box h3{
+  font-size: 40px;
+  text-align: left;
+  font-family: "Barlow";
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}

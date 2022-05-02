@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        HAM RADIO CLUB, IIT BOMBAY
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/satellite.css">
+</head>
+
+<body class="container-fluid">
+    <div id="myNav" class="overlay">
+        <div id="togglebtn">
+            <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="70" onclick="navSwitch()">
+                <path class="line top"
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                <path class="line middle" d="m 30,50 h 40" />
+                <path class="line bottom"
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+            </svg>
+        </div>
+        <div class="overlay-content">
+            <a class="menu" href="#">About</a>
+            <a class="menu" href="#">Services</a>
+            <a class="menu" href="#">Clients</a>
+            <a class="menu" href="#">Contact</a>
+        </div>
+    </div>
+    <div class="filler"></div>
+
+    <div class="sections s1">
+        <p class="text">
+            We use tracking equipment and software to receive RF signals from various satellites. As part of our ground
+            station activities, we have tracked the FOX-1D satellite using a foldable Yagi-Uda antenna and also received
+            SSTV images from the International Space Station using a hand-held transceiver (Baofeng UV-5R) in January
+            2020.
+        </p>
+        <img src="../img/satellite/satellite_1.jpeg" alt="" class="secimg">
+    </div>
+    <div class="sections s2">
+        <p class="text">
+            Amateur Radio on the International Space Station (ARISS) is a program to connect students and amateur radio
+            enthusiasts from around the world to the astronauts at ISS. In this program, astronauts transmit some
+            signals for amateur radio enthusiasts to receive them. These signals are usually encoded images transmitted
+            using the SSTV communication protocol. Inter-MAI-75 (Formation and Popularization of Space Exploration) is
+            an experiment by the Moscow Aviation Institute under the ARISS program. Here are some of the images
+            successfully received and decoded by our team members
+
+            The amateur radio enthusiasts who successfully receive and decode these images are awarded by renowned ham
+            radio clubs as a sign of acknowledgment of their satellite tracking skills. Here are some of the diplomas
+            received by our members. On the 20th anniversary of the ARISS program, ISS transmitted SSTV images from 24th
+            December to 31st December 2020. We participated in this activity and successfully received the SSTV images.
+            Ham Radio Club, IIT Bombay was honoured to have been awarded the ‘ARISS SSTV Award’ for the same. (20th
+            Anniversary image and SSTV Award) 
+        </p>
+        <img src="../img/satellite/satellite_2.jpg" alt="" class="secimg">
+    </div>
+    <div class="sections s3">
+        <p class="text">
+            Due to the coronavirus pandemic and lack of access to our ground station and equipment, we decided to widen
+            our scope and explore virtual tracking with the help of webSDRs. It is done by accessing ground stations
+            across the world to receive signals. The members of the Student Satellite Program are regularly trained and
+            made to compete online to track satellites and receive signals. NOAA is a US-based agency that deploys a
+            series of weather satellites in space and sends images of the Earth. We successfully tracked NOAA 15,18 and
+            19 to receive images of the Earth above Europe and America.
+        </p>
+        <img src="../img/satellite/satellite_3.jpg" alt="" class="secimg">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../js/satellite.js"></script>
+</body>
+
+</html>

@@ -7,8 +7,7 @@
 
 body {
   overflow-x: hidden;
-  background-color: rgba(5, 5, 5, 0.9);
-  /* background-image: url(../img/bkg.jpeg); */
+  background-image: url(../img/bkg.jpeg);
 }
 
 .ham {
@@ -120,36 +119,31 @@ body {
 
 .section {
   margin-top: 80px;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-flow: column;
-  padding: 5vw;
-  ;
+  padding: 50px;
 }
-
-.images {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  height: 30%;
-}
-
 .radioimg {
   display: block;
   margin: 25px 50px;
-  width: 40%;
-  box-shadow: 0px 18px 39.1px 6.9px rgb(224 241 255 / 34%) !important;
+  height: 400px;
+  width: 650px;
+  /* box-shadow: 0px 18px 39.1px 6.9px rgb(224 241 255 / 34%) !important; */
 }
 
 .text {
-  width: 100%;
+  width: 50%;
   margin: 25px 50px;
-  font-size: 18px;
+  font-size: 22px;
   color: #F2F2F2;
-  column-count: 2;
+}
+
+.start{
+  font-size: 40px;
+  font-weight: 900;
 }
 
 @media (max-width: 800px){

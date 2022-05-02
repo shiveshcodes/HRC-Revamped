@@ -7,9 +7,9 @@
   
   body {
     overflow-x: hidden;
-    background-color: rgba(5, 5, 5, 0.9);
     color: #F5f5f5;
-    /* background-image: url(../img/bkg.jpeg); */
+    background-image: url(../img/bkg.jpeg);
+    padding: 0px !important;
   }
 
   .ham {
@@ -127,28 +127,43 @@
 
   .sections{
       width: 100%;
-      height: auto;
+      height: 100vh;
       display: flex;
       justify-content: space-around;
       align-items: center;
   }
-  .s1, .s3
+  /* .s1, .s3
   {
       background-color: black;
-  }
-  .s2{
+  }*/
+ .s2{
       flex-direction: row-reverse;
-      background-color: white;
-      color: black;
-  }
+  } 
   .text{
       width: 40%;
       padding: 30px;
-      font-size: 20px;
+      font-size: 22px;
   }
   .secimg{
-      width: 700px;
-      height: 400px;
-      padding: 30px;
+    height: 400px;
+    width: 650px;
       
   }
+
+  .start{
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  .t1, .t3{
+      text-align: left;
+  }
+
+  .diplomas{
+      height: 70vh;
+      width: 60vw;
+      display: block;
+      margin: auto;
+      margin-bottom: 100px;
+  }
+  
